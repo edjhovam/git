@@ -13,7 +13,15 @@ public class SeleniumExecutor {
   public String extractHeader() {
     return null;
   }
+public String getText(WebElement element){
+     return element.getText();
+public String getText(By locator) {
+     return driver.findElement(locator).getText();
 
+Public void click(By locator){
+  driver.findElement(locator).click();
+public void type(String inputText, By locator){
+     driver.findElement(locator).sendKeys(inputText);
   public String clickTheButtonAndExtractLink() {
     return null;
   }
